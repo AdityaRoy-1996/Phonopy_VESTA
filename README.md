@@ -28,7 +28,23 @@ This Code can Extract the Eigenvectors of Phonon Dispersion from Phonopy and plo
 Save the Following as `band.conf` (Different for your material)
 
 -----------------------------------------------------------------------
-<img src="pics/band_conf.png" width=400 align="middle">
+
+DIM = 2 2 2 
+
+FORCE_CONSTANTS = WRITE
+
+BAND =  0 0 0	0.5 0.5 0.5
+
+BAND_POINTS = 2
+
+BAND_LABELS = $\Gamma$ R
+
+#THz --> cm-1
+
+FREQUENCY_CONVERSION_FACTOR = 521.47083116 
+
+EIGENVECTORS = .TRUE.
+
 -------------------------------------------------------------------------
 
 Please look at the Phonopy website for other required files for your interface (e.g, `VASP`, `QE`).
@@ -44,7 +60,37 @@ Note : This lines are written for VASP interface, but simillar things are for ot
 ### 3)  You should get `band.yaml` as an output with the following format
 
 ---------------------------------------------------------------------
-<img src="pics/band_yaml.png" width=400 align="middle">
+
+phonon:
+
+- q-position: [    0.0000000,    0.0000000,    0.0000000 ]
+
+  distance:    0.0000000
+  
+  band:
+  
+!  - # 1
+  
+    frequency:   -0.0241026373
+    
+    eigenvector:
+    
+    - # atom 1
+    
+      - [ -0.00000504564764,  0.00000000000000 ]
+      
+      - [ -0.31749032741153,  0.00000000000000 ]
+      
+      - [  0.15556314465407,  0.00000000000000 ]
+      
+    - # atom 2
+    
+      - [ -0.00000504564764,  0.00000000000000 ]
+      
+      - [ -0.31749032741153,  0.00000000000000 ]
+      
+      - [  0.15556314465407,  0.00000000000000 ]
+      
       
 ------------------------------------------------------------------------
 
