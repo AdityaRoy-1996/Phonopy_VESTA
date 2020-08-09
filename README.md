@@ -3,11 +3,15 @@
 
 This Code can Extract the Eigenvectors of Phonon Dispersion from Phonopy and plot it in VESTA Files for visualisation.
 
+<img src="pics/modes.png" width=400 align="middle">
+
 # Requirements :
 Phonopy
 VESTA
 Python
+
 #Check if the below are present by trying to import in python
+
 numpy
 sys
 os
@@ -18,15 +22,7 @@ shutil
 ### 1)  Save the Following as `band.conf` (Different for your material)
 
 -----------------------------------------------------------------------
-DIM =  3 3 1
-BAND =   0 0 0  0.5 0.5 0  0.5 0.5 0.5  0 0 0  0.5 0.0 0.5  0 0 0  0 0 0.5
-BAND_POINTS = 2
-BAND_LABELS =  $\Gamma$ X P $\Gamma$ N $\Gamma$ M
-FORCE_CONSTANTS = READ
-#THz --> cm-1
-FREQUENCY_CONVERSION_FACTOR = 521.47083116 
-EIGENVECTORS = .TRUE.
-
+<img src="pics/band_conf.png" width=400 align="middle">
 -------------------------------------------------------------------------
 
 Please look at the Phonopy website for other required files for your interface (e.g, `VASP`, `QE`).

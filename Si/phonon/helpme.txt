@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Create Displacements with supercell size 222
+#------------------------------------------------------
+phonopy --qe -c prim_cell.in -d --dim="2 2 2"
+
+# And Run this with QE PWSCF
+
+# Collect Forces and Create FORCE_SETS
+#------------------------------------------------------
+phonopy --qe -f supercell-001/supercell-001.out
+
+
+# Execute band.conf and save in 'band.pdf'
+#------------------------------------------------------
+phonopy --qe -c prim_cell.in -p band.conf
+
+# For QE
+# Export prim_cell.in ----> POSCAR.xsf by Xcrysden
+# and save POSCAR.xsf ----> POSCAR.vesta by VESTA
+
+# Execute the Python Code
+#------------------------------------------------------
+python3 extract_vectors_phonopy.py band.yaml POSCAR.vesta
