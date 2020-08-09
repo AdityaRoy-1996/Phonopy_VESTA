@@ -33,10 +33,10 @@ Please look at the Phonopy website for other required files for your interface (
 Note : Here I have used BAND_POINTS = 2 to find the eigenvectors only at the High Symmetry Points, you can use more.
 
 ### 2) RUN THIS AS
-$ phonopy -c POSCAR -p band.conf -s
+	$ phonopy -c POSCAR -p band.conf -s
 
 Note : This lines are written for VASP interface, but simillar things are for other interfaces supported by phonopy e.g, for QE
-$ phonopy --qe -c prim_cell.in -p band.conf -s
+	$ phonopy --qe -c prim_cell.in -p band.conf -s
 
 ### 3)  You should get `band.yaml` as an output with the following format
 
