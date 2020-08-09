@@ -24,7 +24,8 @@ This Code can Extract the Eigenvectors of Phonon Dispersion from Phonopy and plo
 
 # Steps :
 
-### 1)  Save the Following as `band.conf` (Different for your material)
+### 1)  
+Save the Following as `band.conf` (Different for your material)
 
 -----------------------------------------------------------------------
 <img src="pics/band_conf.png" width=400 align="middle">
