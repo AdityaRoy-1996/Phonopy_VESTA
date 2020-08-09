@@ -65,7 +65,7 @@ the same files saved  in other names but in same format, you can put those names
 
 ### 5) 
 Finally all the `VESTA files` are ready for visualization and will be saved in `VESTA_FILES` folder with each q-point and inside them, the VESTA files 
-saved for each band with the name in format of `band_index_(frequency_in_cm-1)`. You can change the name of the files to any units by changing the Tag
+saved for each band with the name in format of `band_index_(frequency_in_cm-1).vesta`. You can change the name of the files to any units by changing the Tag
 `FREQUENCY_CONVERSION_FACTOR = 521.47083116` in `band.conf`, which converts from THz to cm-1. But keep in mind, as some bands are degenerate, 
 the format of the files to be written should follow the trend as written in the code, other wise some degenerate bands with same frequency
 will get overwritten and you wont get the number of `VESTA` files you are expecting for your material i.e., 3 x natoms.
