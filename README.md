@@ -5,6 +5,7 @@ This Code can Extract the Eigenvectors of Phonon Dispersion from Phonopy and plo
 
 <img src="pics/modes.png" width=400 align="middle">
 
+# Citation :
 If you use this code, please cite this article:
 A.P. Roy, Jayakrishnan SS , A. Khandelwal, M.K. Chattopadhyay, V. Sathe, S.K. Mishra, R. Mittal, P.D. Babu, M. Duc Le, D. Bansal, “Evidence of strong orbital-selective spin-orbital-phonon coupling in CrVO4”. Physical Review Letters Vol. 132, 026701, 2024, DOI: https://doi.org/10.1103/PhysRevLett.132.026701
 
